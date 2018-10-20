@@ -13,11 +13,15 @@
 ` で囲むと、インライン表示できます。ファイル名や一行単位でのコードの解説時に使ってください。
 ``` で囲むと、コードブロックを作成できます。ソースコードや実行結果の表示に使ってください。
 -->
+今回の演習は2つあります。
+うまく動かない、操作が分からないという方は、遠慮なく3年生に聞いてください。
+
 ### 演習1
 `Hello.java`を作成し、以下のコードを入力し、実行しましょう。
+
 ```java:Hello.java
 public class Hello {
-	String message = "Hello!";
+	String message = "Hello";
 	public static void main(String[] args) {
 		System.out.println(message);
 	}
@@ -25,16 +29,38 @@ public class Hello {
 ```
 #### 実行結果
 ```
-Hello!
-(システムは0で終了しました。)
+Hello
+システムは0で終了しました。
 ```
 
 ### 演習2
+`Hello.java`を以下のように変更しましょう。
+
+```Hello.java
+public class Hello {
+	String message = "Hello";
+	public static void main(String[] args) {
+		message += " World!";
+		System.out.println(message);
+	}
+}
+```
+
+#### 実行結果
+
+```
+Hello World!
+システムは0で終了しました。
+```
 
 ## 課題
 <!--
 今回の範囲の理解を確認できるような課題を作ってください。
+答えの書き方や扱いについては、SampleAnsを参照してください。
 -->
+
+`Name.java`を作成し、自分の名前が表示されるクラスを作成しなさい。
+また、
 
 ## 発展
 <!--
