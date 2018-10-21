@@ -1,1 +1,2 @@
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMgzGvoDvXcGwg72v8p1sCaPHdCFpGv7xGUD0RTmHacENaxQ/viewform?embedded=true" width="640" height="871" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+# お知らせ
+### 2018/10/21更新
