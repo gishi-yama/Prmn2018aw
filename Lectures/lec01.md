@@ -135,13 +135,13 @@ public class HelloServlet extends HttpServlet {
 発展問題は、調べたり聞いたりしないとできない前提の問題です。<br>
 そのため、問題文も命令口調です。<br>
 心に余裕があったり、家に帰りたくないときに挑戦してみてください。<br>
-## 問題1(★☆☆)
+## 問題1
 パッケージ`lec01`に`DateTimeServlet.java`を作成しなさい。<br>
 DateTimeServlet.javaを、http://localhost:8080/prmn_servlet/DateTime に<br>
 アクセスしたら、実行例のようにページを表示した日付と時間が表示されるようにしなさい。<br>
 ### 実行例
 ![問題1の実行例](https://i.imgur.com/uE5rSbA.png)
-## 問題2(★★☆)
+## 問題2
 `HelloServlet.java`に、`DateTimeServlet.java`のページに移動するリンクを、<br>
 `DateTimeServlet.java`に、`HelloServlet.java`のページに移動するリンクを作成しなさい。<br>
 ### 実行例
@@ -152,5 +152,5 @@ DateTimeServlet.javaを、http://localhost:8080/prmn_servlet/DateTime に<br>
 - DateTimeServletのページ<br>
 ![問題2の実行例2](https://i.imgur.com/58yVs2W.png)<br>
 
-## 問題3(★★★)
+## 問題3
 演習2で作成したページを表示するまでの、Webクライアント（Webブラウザ）の動作を説明しなさい。<br>
