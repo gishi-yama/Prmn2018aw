@@ -32,7 +32,7 @@ IntelliJ上で右クリックをして、「ブラウザーで開く」の「Chr
 下図のように表示されたら、次へ進んでください。
 
 ### 実行結果
-![演習1の実行結果](https://i.imgur.com/YdVFHJc.png) 
+![演習1の実行結果](https://i.imgur.com/NijX2zG.png) 
 
 ## 演習2
 パッケージ`lec01`内の`HelloServlet.java`に以下のコードを入力してください。<br>
