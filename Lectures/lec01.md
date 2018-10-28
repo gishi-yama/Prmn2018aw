@@ -6,6 +6,8 @@
 - 静的と動的
 
 # 演習
+[こちら](https://www.dropbox.com/sh/14w4sehczc5oxzq/AADmvKnEvh49uAFUTYIUpAUya?dl=0)から、prmn_servletをダウンロードしてください。<br>
+ダウンロードしたら、IntelliJで`pom.xml`をインポートしてください。<br>
 ## 演習1
 パッケージ`lec01`内の`hello.html`に以下のコードを入力してください。<br>
 <br>
