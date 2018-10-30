@@ -134,7 +134,6 @@ public class HelloServlet extends HttpServlet {
 
 # 発展問題
 発展問題は、調べたり聞いたりしないとできない前提の問題です。<br>
-そのため、問題文も命令口調です。<br>
 心に余裕があったり、家に帰りたくないときに挑戦してみてください。<br>
 ## 問題1
 パッケージ`lec01`に`DateTimeServlet.java`を作成しなさい。<br>
