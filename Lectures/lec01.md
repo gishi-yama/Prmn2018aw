@@ -61,7 +61,7 @@ public class HelloServlet extends HttpServlet {
     int second;
     String message;
     
-    LocalDate locaDate;
+    LocalDate localDate;
     String dayOfWeek;
 
     @Override
