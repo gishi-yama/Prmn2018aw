@@ -38,9 +38,9 @@ WebServletをやっている場合ではなくなりました。<br>
 Apache Wicket の Quick Start ページから、Mavenプロジェクトをダウンロードしてください。<br>
 [Create a Wicket Quickstart](https://wicket.apache.org/start/quickstart.html) に移動し、フォームを以下のように変更してください。
 
-- Group ID: `com.example`
-- Artifact ID: `wicket_handson`
-- Wicket Version: 8.1.0
+- Group ID : `com.example`
+- Artifact ID : `wicket_handson`
+- Wicket Version : 8.1.0
 
 generated command line に生成されたコマンドをコピーしてください。<br>
 コマンドプロンプトを開き、Idea Projectsディレクトリ に移動し、<br>
