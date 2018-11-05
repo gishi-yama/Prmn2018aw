@@ -2,30 +2,30 @@
 
 ---
 
-![IntelliJのHome](https://i.imgur.com/qnNS56D.png)
+![IntelliJのHome](https://i.imgur.com/qnNS56D.png)<br>
 「プロジェクトのインポート」を選択
 
 ---
 
-![select pom.xml](https://i.imgur.com/kTf0Kl5.png)
+![select pom.xml](https://i.imgur.com/kTf0Kl5.png)<br>
 wicket_handsonのpom.xmlを選択
 
 ---
 
-![check maven](https://i.imgur.com/thTbP8A.png)
+![check maven](https://i.imgur.com/thTbP8A.png)<br>
 「Mavenプロジェクトを自動的にインポートする」をチェック
 
 ---
 
-![](https://i.imgur.com/jHCgKZo.png)
+![](https://i.imgur.com/jHCgKZo.png)<br>
 「次へ」
 
 ---
 
-![](https://i.imgur.com/oiqShRd.png)
+![](https://i.imgur.com/oiqShRd.png)<br>
 「次へ」
 
 ---
 
-![](https://i.imgur.com/l2GLEF0.png)
+![](https://i.imgur.com/l2GLEF0.png)<br>
 「完了」
