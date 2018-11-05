@@ -25,6 +25,7 @@ WebServletをやっている場合ではなくなりました。<br>
 締め切りは、11/5(月)の23:59とします。
 
 # 前準備
+画像で見たいひとは[こちら](https://github.com/k-oketa/Prmn2018aw/blob/master/Lectures/Lec02/PITCHME.md)
 
 ### 環境の構築
 このプロジェクトでは以下のソフトウェアが必要になります。
@@ -86,4 +87,3 @@ generated command line に生成されたコマンドをコピーしてくださ
 ```
 IdeaProjects に wicket_handson フォルダが生成されているので<br>
 その中にある`pom.xml`を IntelliJ でインポートしてください。<br>
-（この手順も余裕があれば書きます。)
