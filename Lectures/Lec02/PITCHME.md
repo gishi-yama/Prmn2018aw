@@ -2,7 +2,7 @@
 
 ---
 
-<img src="https://i.imgur.com/qnNS56D.png" width="500">
+<img src="https://i.imgur.com/qnNS56D.png" width="720"><br>
 「プロジェクトのインポート」を選択
 
 ---
