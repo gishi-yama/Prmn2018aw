@@ -12,20 +12,20 @@ wicket_handsonのpom.xmlを選択
 
 ---
 
-![check maven](https://i.imgur.com/thTbP8A.png)<br>
+<img src="https://i.imgur.com/thTbP8A.png" width="640"><br>
 「Mavenプロジェクトを自動的にインポートする」をチェック
 
 ---
 
-![](https://i.imgur.com/jHCgKZo.png)<br>
+<img src="https://i.imgur.com/jHCgKZo.png" width="640"><br>
 「次へ」
 
 ---
 
-![](https://i.imgur.com/oiqShRd.png)<br>
+<img src="https://i.imgur.com/oiqShRd.png" width="640"><br>
 「次へ」
 
 ---
 
-![](https://i.imgur.com/l2GLEF0.png)<br>
+<img src="https://i.imgur.com/l2GLEF0.png" width="640"><br>
 「完了」
