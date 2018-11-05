@@ -1,3 +1,24 @@
+## Wicket Quickstart
+
+---
+
+<img src="https://i.imgur.com/yLIytut.png" width="540"><br>
+- Group ID : `com.example`
+- Artifact ID : `wicket_handson`
+- Wicket Version : 8.1.0
+
+---
+
+<img src="https://i.imgur.com/yLIytut.png" width="640"><br>
+generated command line 欄をコピー
+
+---
+
+<img src="https://i.imgur.com/zz2Svy1.png" width="640"><br>
+貼り付けて実行
+
+---
+
 ## pom.xmlのインポート
 
 ---
