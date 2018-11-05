@@ -77,7 +77,7 @@ public class HomePage extends WebPage {
 ![演習1の実行結果](https://i.imgur.com/M8YglSH.png)
 
 ## フォームを作成する
-`com.example`パッケージ　に　`lec01`パッケージを作成し、<br>
+`main/java` の `com.example`パッケージ　に　`lec01`パッケージを作成し、<br>
 そこに、`FormPage.html` と `FormPage.java` を作成し、以下のように入力してください。<br>
 
 FormPage.html
@@ -147,7 +147,8 @@ HomePage.html
 	<dd><a wicket:id="toFormPage">FormPageへ</a></dd>
 </dl>
 ```
-その後、`HomePage.java` のコンストラクタ内に以下を追加してください。<br>
+その後、`HomePage.java` のコンストラクタ内に以下を追加し、<br>
+importにLinkとFormPageを追加してください。<br>
 <br>
 HomePage.java
 ```HomePage.java
