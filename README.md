@@ -26,7 +26,7 @@ WebServletをやっている場合ではなくなりました。<br>
 そのため、参加希望フォームの入力は、締め切り厳守でお願いいたします。
 
 # 前準備
-画像で見たいひとは[こちら](https://github.com/k-oketa/Prmn2018aw/PITCHME.md)
+画像で見たいひとは[こちら](https://github.com/k-oketa/Prmn2018aw/blob/master/PITCHME.md)
 
 ### 環境の構築
 このプロジェクトでは以下のソフトウェアが必要になります。
