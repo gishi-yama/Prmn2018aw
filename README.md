@@ -88,3 +88,6 @@ generated command line に生成されたコマンドをコピーしてくださ
 ```
 IdeaProjects に wicket_handson フォルダが生成されているので<br>
 その中にある`pom.xml`を IntelliJ でインポートしてください。<br>
+
+## 参考資料
+wi
