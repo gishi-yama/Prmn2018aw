@@ -1,4 +1,6 @@
 # 演習
+- [学習資料](https://github.com/k-oketa/Prmn2018aw/blob/master/Lectures/Lec02/PITCHME.md)
+- [学習資料（スライド式）](https://gitpitch.com/k-oketa/Prmn2018aw?p=Lectures/Lec02)
 ## Wicket で前回のようなページを作ってみる
 `com.example`パッケージの`HomePage.html`と`HomePage.java`を以下のように変更してください。<br>
 
