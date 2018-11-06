@@ -39,28 +39,6 @@ public FormPage() {
 
 ---
 
-```java:FormPage.java
-public FormPage() {
-    titleModel = Model.of("");
-
-    Form<Void> form = new Form<Void>("form") {
-        private static final long serialVersionUID = 1L;
-
-        @Override
-        protected void onSubmit() {
-            // データ送信ボタンがクリックされた時の処理
-            super.onSubmit();
-            String title = titleModel.getObject();
-            System.out.println("タイトル: " + title);
-        }
-    };
-    add(form);
-
-    TextField<String> titleField = new TextField<>("title", titleModel);
-    form.add(titleField);
-
-}
-```
 @[17](TextFieldコンポーネント)
 
 ---
