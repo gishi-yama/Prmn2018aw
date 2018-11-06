@@ -67,7 +67,11 @@ add(form);
 
 ---
 
-### 演習2のhtml
+### 演習2のForm
+
+![](https://i.imgur.com/oPwZkfj.png)<br>
+
+
 
 ```html:FormPage.html
 <form wicket:id="form">
