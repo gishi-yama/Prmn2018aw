@@ -41,7 +41,24 @@ public FormPage() {
 }
 ```
 
-@[17](TextFieldコンポーネント)
-@[18](add()を忘れずに!)
+---
+
+### Formコンポーネント
+```
+Form<Void> form = new Form<Void>("form") {
+        private static final long serialVersionUID = 1L;
+
+        @Override
+        protected void onSubmit() {
+            // データ送信ボタンがクリックされた時の処理
+            super.onSubmit();
+            String title = titleModel.getObject();
+            System.out.println("タイトル: " + title);
+        }
+};
+add(form);
+
+```
+@[12](add()を忘れずに!)
 
 ---
