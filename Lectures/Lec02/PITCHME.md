@@ -60,6 +60,5 @@ public FormPage() {
     form.add(titleField);
 
 }
-
-@[59](TextFieldコンポーネント)
 ```
+@[59](TextFieldコンポーネント)
