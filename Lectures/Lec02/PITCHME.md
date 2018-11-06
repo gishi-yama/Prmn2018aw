@@ -13,32 +13,11 @@
 ---
 
 ### コンポーネントを配置していく
-```java:FormPage.java
-public FormPage() {
-    titleModel = Model.of("");
-
-    Form<Void> form = new Form<Void>("form") {
-        private static final long serialVersionUID = 1L;
-
-        @Override
-        protected void onSubmit() {
-            // データ送信ボタンがクリックされた時の処理
-            super.onSubmit();
-            String title = titleModel.getObject();
-            System.out.println("タイトル: " + title);
-        }
-    };
-    add(form);
-
-    TextField<String> titleField = new TextField<>("title", titleModel);
-    form.add(titleField);
-
-}
-```
-演習2のFormPageコンストラクタ
 
 ---
 
+### 演習2のFormPageのコンストラクタ
+
 ```java:FormPage.java
 public FormPage() {
     titleModel = Model.of("");
@@ -61,7 +40,6 @@ public FormPage() {
 
 }
 ```
-演習2のFormPageコンストラクタ<br>
 @[17](TextFieldコンポーネント)
 @[18](add()を忘れずに!)
 
