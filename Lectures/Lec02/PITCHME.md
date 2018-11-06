@@ -12,7 +12,7 @@
 
 ---
 
-### コンポーネントを配置していく
+## コンポーネントを配置していく
 
 ---
 
@@ -62,3 +62,16 @@ add(form);
 @[12](add()を忘れずに!)
 
 ---
+
+## コンポーネントは入れ子にできる
+
+---
+
+### 演習2のhtml
+
+```html:FormPage.html
+<form wicket:id="form">
+    タイトル:<input type="text" wicket:id="title"><br>
+    <button type="submit">データ送信</button>
+</form>
+```
