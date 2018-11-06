@@ -8,7 +8,7 @@
 `com.example`パッケージの`HomePage.html`と`HomePage.java`を以下のように変更してください。<br>
 
 HomePage.html
-```java:HomePage
+```html:HomePage.html
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
 <head>
