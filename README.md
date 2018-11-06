@@ -90,4 +90,5 @@ IdeaProjects に wicket_handson フォルダが生成されているので<br>
 その中にある`pom.xml`を IntelliJ でインポートしてください。<br>
 
 ## 参考資料
-wi
+https://github.com/wicket-sapporo/wicket_handson <br>
+https://cloudear.jp/blog/?p=1755 <br>
