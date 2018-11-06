@@ -101,5 +101,6 @@ public FormPage() {
     form.add(titleField);
 }
 ```
-@[16](TextFieldコンポーネントを作成）<br>
+@[16](TextFieldコンポーネントを作成)
+
 @[17](formにadd()している！)
