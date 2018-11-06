@@ -61,6 +61,7 @@ public FormPage() {
 
 }
 ```
+演習2のFormPageコンストラクタ<br>
 @[17](TextFieldコンポーネント)
 @[18](add()を忘れずに!)
 
