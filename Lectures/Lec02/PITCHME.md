@@ -6,3 +6,6 @@
 ---
 
 ### 1ページにつき1クラス
+![](https://i.imgur.com/UfZWrDN.png)<br>
+![](https://i.imgur.com/F6Cj2Ls.png)<br>
+※同名でないとダメ！
