@@ -1,7 +1,7 @@
 # 資料
 - [学習資料](https://github.com/k-oketa/Prmn2018aw/blob/master/Lectures/Lec02/PITCHME.md)
 - [学習資料（スライド式）](https://gitpitch.com/k-oketa/Prmn2018aw?p=Lectures/Lec02)
-- [解答例](第2回講習が終了次第アップロードします。)
+- [解答例](https://scrapbox.io/Prmn2018aw/%E7%AC%AC2%E5%9B%9E%E3%81%AE%E8%A7%A3%E7%AD%94%E4%BE%8B)
 
 # 演習
 ## Wicket で前回のようなページを作ってみる
