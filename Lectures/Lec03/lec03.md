@@ -4,6 +4,7 @@
 ## フォームの内容を確認するページを作ろう
 `lec02`パッケージ の中に `ConfirmationPage.html` と `ConfirmationPage.java` を作成し、<br>
 以下のように内容を変更してください。<br>
+<br>
 
 ConfirmationPage.html
 ```html:ConfirmationPage.html
@@ -25,7 +26,7 @@ ConfirmationPage.html
 ```
 
 ConfirmationPage.java
-```ConfirmationPage.java
+```java:ConfirmationPage.java
 package com.example.lec02;
 
 import com.example.lec01.FormPage;
@@ -78,7 +79,6 @@ FormPage.html
 <form wicket:id="form">
     タイトル:<input type="text" wicket:id="title"><br>
     場所<input type="text" wicket:id="place"><br>
-    日付<input type="date" wicket:id="date"><br>
     <button type="submit">データ送信</button>
 </form>
 </body>
@@ -120,13 +120,171 @@ public class FormPage extends WebPage {
         };
         add(form);
 
-        // title を入力する input type="text"用のコンポーネント
         TextField<String> titleField = new TextField<>("title", titleModel);
         form.add(titleField);
 
-        // place を入力する input type="text"用のコンポーネント
         TextField<String> placeField = new TextField<>("place", placeModel);
         form.add(placeField);
     }
 }
 ```
+http://localhost:8080 にアクセスし、「データ送信」をクリックした後、<br>
+FormPage で入力した内容を ConfirmationPage で確認できることを確認してください。<br>
+### 実行例
+![](https://i.imgur.com/mlhDBiZ.png)
+
+## 仕様変更に強くする
+現状では、フォームの入力内容を増やしたとき、ConfirmationPage も変更しなければいけない点が多数存在します。<br>
+具体的に書くと
+- 引数の追加
+- Model の作成
+- Label の追加
+
+最低限でもこの3つをこなさなければなりません。拡張しにくく、変更に弱いシステムの出来上がりです。<br>
+これでは、オブジェクト指向の設計指針である、オープン・クローズドの原則に反している気もするので、変更を加えます。<br>
+<br>
+`com.example`パッケージ の中に、`classes`パッケージ を作成してください。<br>
+その中に、`Task.java` を作成し、以下のコードを入力してください。<br>
+<br>
+
+Task.java
+```java:Task.java
+package com.example.classes;
+
+import java.io.Serializable;
+
+public class Task implements Serializable {
+
+    private String title;
+    private String place;
+
+    public Task() {
+        this.title = "";
+        this.place = "";
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+}
+
+```
+
+`lec02`パッケージの中に、`CPMFormPage.html` と `CPMFormPage.java` を作成してください。<br>
+`CPMFormPage.html` は、`FormPage.html` を コピーしてください。<br>
+`CPMFormPage.java` に以下のコードを入力してください。<br>
+<br>
+CPMFormPage.java
+```java:CPMFormPage.java
+package com.example.lec02;
+
+import com.example.classes.Task;
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.TextField;
+import org.apache.wicket.model.CompoundPropertyModel;
+import org.apache.wicket.model.IModel;
+
+public class CPMFormPage extends WebPage {
+    private static final long serialVersionUID = 1L;
+
+    IModel<Task> taskModel;
+
+    public CPMFormPage() {
+        taskModel = new CompoundPropertyModel<>(new Task());
+
+        Form<Task> form = new Form<Task>("form", taskModel) {
+            private static final long serialVersionUID = 1L;
+
+            @Override
+            protected void onSubmit() {
+                super.onSubmit();
+                setResponsePage(new CPMConfirmationPage(getModel()));
+            }
+        };
+        add(form);
+
+        TextField<String> titleField = new TextField<>("title");
+        form.add(titleField);
+
+        TextField<String> placeField = new TextField<>("place");
+        form.add(placeField);
+    }
+}
+```
+
+`lec02`パッケージの中に、`CPMConfirmation.html` と `CPMConfirmation.java` を作成してください。<br>
+`CPMConfirmation.html` は、`FormConfirmation.html` を コピーしてください。<br>
+`CPMConfirmation.java` に以下のコードを入力してください。<br>
+<br>
+
+CPMConfirmationPage
+```java:CPMConfirmationPage
+package com.example.lec02;
+
+import com.example.classes.Task;
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.basic.Label;
+import org.apache.wicket.markup.html.link.Link;
+import org.apache.wicket.model.CompoundPropertyModel;
+import org.apache.wicket.model.IModel;
+
+public class CPMConfirmationPage extends WebPage {
+
+    public CPMConfirmationPage(IModel<Task> model) {
+        setDefaultModel(CompoundPropertyModel.of(model));
+        add(new Label("title"));
+        add(new Label("place"));
+
+        Link<Void> toFormPageLink = new Link<Void>("toFormPage") {
+            @Override
+            public void onClick() {
+                setResponsePage(new CPMFormPage());
+            }
+        };
+        add(toFormPageLink);
+    }
+}
+```
+http://localhost:8080 にアクセスし、FormPage、ConfirmationPage と同じ動作であることを確認してください。
+
+# 課題
+実行例のように、種類を入力する項目を追加してください。<br>
+<br>
+CPMFormPage
+<br>
+![](https://i.imgur.com/cp3ZlP4.png)<br>
+<br>
+CPMConfirmationPage<br>
+<br>
+![](https://i.imgur.com/b4MhbgS.png)<br>
+<br>
+[ヒント](https://scrapbox.io/Prmn2018aw/%E8%AA%B2%E9%A1%8C%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88)
+# 発展問題
+今回のは、調べないとできません。<br>
+更に、Wicket はマイナーすぎて出てこないかもしれません。<br>
+辛抱してください。
+## 問題1
+課題の内容を変更し、種類を選択できるように変更してください。<br>
+### 実行例
+CPMFormPage<br>
+![](https://i.imgur.com/cHKagva.png)<br>
+CPMConfirmationPage<br>
+![](https://i.imgur.com/EhmmSlT.png)<br>
+## 問題2
+タイトル欄を入力必須項目にしてください。<br>
+入力せずに「データ送信」をクリックしたら、以下の画像のようになるようにしてください。<br>
+### 実行例
+![](https://i.imgur.com/IoEl5jc.png)<br>
