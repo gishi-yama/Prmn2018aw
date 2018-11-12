@@ -52,7 +52,7 @@ public class ConfirmationPage extends WebPage {
         add(placeLabel);
 
         Link<Void> toFormPageLink = new Link<Void>("toFormPage") {
-            private static final long serialVerionUID = 1L;
+            private static final long serialVersionUID = 1L;
 
             @Override
             public void onClick() {
@@ -258,8 +258,38 @@ public class CPMConfirmationPage extends WebPage {
     }
 }
 ```
-http://localhost:8080 にアクセスし、FormPage、ConfirmationPage と同じ動作であることを確認してください。
+最後に、HomePageにCPMFormPageにアクセスするリンクを作成しましょう。<br>
+`<dl>...</dl>`の中に、以下のコードを追加してください。<br>
+<br>
+HomePage.html
+```html:HomePage.html
+<dd><a wicket:id="toCPMFormPage">CPMFormPageへ</a></dd>
+```
+続いて、コンストラクタに以下のコードを追加してください。<br>
+<br>
+HomePage.java
+```java:HomePage.java
+Link<Void> toCPMFormPageLink = new Link<Void>("toCPMFormPage") {
+    private static final long serialVersionUID = 1L;
 
+    @Override
+    public void onClick() {
+        setResponsePage(new CPMFormPage());
+    }
+};
+add(toCPMFormPageLink);
+```
+[http://localhost:8080](http://localhost:8080/) にアクセスし、FormPage、ConfirmationPage と同じ動作であることを確認してください。<br>
+<br>
+ここのポイントは、モデルのクラスを Model から CompoundPropertyModel に切り替えることで、<br>
+コンポーネントのデータの管理場所が変っている点です。<br>
+<br>
+コンポーネントの wicket:id と Taskインスタンスのフィールド変数名 が一緒であれば、<br>
+コンポーネントは自動的にTaskのフィールド変数をデータの取り出し・保存場所として使うように変わっています。<br>
+<br>
+こうしておけば、もしフォームの入力欄が増えても、増えたwicket:idと同じ名前のフィールド変数をTaskに作るだけで、プログラムの変更が完了します。<br>
+<br>
+Modelには他にも種類があり、データベースからデータを取り出す場合や、読み取り専用のデータを使う時など、より最適なモデルに切り替えることがあります。<br>
 # 課題
 実行例のように、種類を入力する項目を追加してください。<br>
 <br>
