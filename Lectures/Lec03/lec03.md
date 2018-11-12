@@ -231,7 +231,7 @@ public class CPMFormPage extends WebPage {
 <br>
 
 CPMConfirmationPage
-```java:CPMConfirmationPage
+```java:CPMConfirmationPage.java
 package com.example.lec02;
 
 import com.example.classes.Task;
