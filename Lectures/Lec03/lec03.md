@@ -227,9 +227,9 @@ public class CPMFormPage extends WebPage {
 }
 ```
 
-`lec02`パッケージの中に、`CPMConfirmation.html` と `CPMConfirmation.java` を作成してください。<br>
-`CPMConfirmation.html` は、`ConfirmationPage.html` を コピーしてください。<br>
-`CPMConfirmation.java` に以下のコードを入力してください。<br>
+`lec02`パッケージの中に、`CPMConfirmation.htmlPage` と `CPMConfirmationPage.java` を作成してください。<br>
+`CPMConfirmationPage.html` は、`ConfirmationPage.html` を コピーしてください。<br>
+`CPMConfirmationPage.java` に以下のコードを入力してください。<br>
 <br>
 
 CPMConfirmationPage.java
