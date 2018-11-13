@@ -6,6 +6,10 @@ To-Doリストを作成します。<br>
 
 # お知らせ
 
+### 2018/11/13
+講習会の日程について、アンケートを取りたいと思います。<br>
+[こちら](https://docs.google.com/forms/d/e/1FAIpQLSeC_YIQKDmZH3Y9YBK9j9QNXZzSmFd_1ohBsWgZjEZlGXt-6g/viewform?usp=sf_link)にアクセスして、各自回答してください。
+
 ### 2018/11/06
 毎週火曜日に講習をしようと思っていたら、そのうちの3/6回分に補講が入りました。<br>
 そのため、11/20（火)と、12/4（火)を休講にします。(Slackでも連絡します。)<br>
