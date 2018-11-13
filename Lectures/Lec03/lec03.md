@@ -1,3 +1,5 @@
+# 関連
+- [出席フォーム](https://docs.google.com/forms/d/e/1FAIpQLSfv196Cb4AMlbu9TTVrQ_PQhiqbLRlzFvgXforuB__RJWDSSg/viewform?usp=sf_link)
 # 演習
 `com.example`パッケージ の中に `lec02`パッケージを作成してください。
 
